@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(180, 22%, 85%);
+    
+}
+
+header {
+    background-image: url('images/bg-header-desktop.svg');
+    padding: 70px 50px;
+    background-color: hsl(180, 29%, 50%);
+}
+
+
+.container ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40;
+    border-bottom:  1px solid #ddd;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: hsl(180, 23%, 92%);
+}
+
+
+
+.container ul li:hover{
+    border-left: 3px solid hsl(180, 29%, 50%);
+    background: #f4f4f4;
+}
+
+.container li {
+    display: flex;
+    width: 1000px;
+    height: auto;
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.container {
+    margin-left: 790px;
+    margin-right: 790px;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.inner-left-part {
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+.top-mid {
+    background-color: hsl(180, 29%, 50%);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.top-end {
+    background-color: hsl(180, 14%, 20%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.left-part > .top-mid {
+    background-color: #17b298;
+    
+}
+
+.right-part {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+}
+
+.right-part > div {
+    background-color:  hsl(180, 22%, 85%);
+    padding: 9px;
+    border-radius: 10px;
+    color: hsl(180, 31%, 42%);
+}
+
+
+.attribution {
+    font-size: 40px;
+    color: #095f50;
+}
+
+
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+        display: flex;
+        width: 375px;
+        padding: 0;
+        margin-left: -20rem;
+        gap: 20px;
+    }
+
+    .container ul li {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .left-part {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .right-part {
+        justify-content: flex-end;
+    }
+}
